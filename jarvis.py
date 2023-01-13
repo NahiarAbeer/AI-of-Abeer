@@ -31,10 +31,14 @@ def take_command():
                 command=command.replace('guddu','')
                 # print(command)
 
-            return command
-    except:
-        talk('try again')
-        pass
+                return command
+    except Exception as e:
+
+        print(e)    
+
+        print("Unable to Recognize your voice.")  
+
+        return "None"
         
 
 
